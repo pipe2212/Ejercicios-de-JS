@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+ <html lang="en" dir="true">
+   <head>
+    <meta charset="utf-8">
+    <title>peso en otros mundos</title>
+     <style>
+    body
+    {
+    background-color:#3bdb4f;
+    color: white;
+    font-family: Helvetica;
+    }
+    h1
+    {
+    background-color: #353d36
+    }
+     </style>
+   </head>
+  <body>
+    <h1><strong>cuanto pesas en otros planetas</strong></h1>
+    <p>hola sabias que en la tierra pesas diferente que en marte o jupiter</p>
+  </body>
+  <script type="text/javascript">
+    let usuario = prompt("cual es tu peso");
+    let planeta = parseInt(prompt("que planeta quieres \n marca 1 marte \n marca 2 jupiter"))
+    let peso = parseInt(usuario);
+    let g_tierra = 9.8;
+    let g_marte = 3.7;
+    let g_jupiter = 24.8;
+    let peso_final;
+    let nombre;
+    if (planeta == 1)
+    {
+   let peso_final = peso * g_marte / g_tierra;
+   peso_final = parseInt (peso_final);
+     document.write ("tu peso en marte es <strong> " + peso_final + " kg </strong>" );
+     alert("felicitacions");
+    }
+    else if (planeta == 2)
+    {
+   let peso_final = peso * g_jupiter / g_tierra;
+   peso_final = parseInt (peso_final);
+     document.write ("tu peso en jupiter es <strong> " + peso_final + " kg </strong>" );
+     alert("felicitacions");
+    }
+    else
+    {
+      peso_final= "10000"
+     document.write ("tu peso en la cama es <strong> " + peso_final + " kg </strong>" );
+     alert("escribe bien" );
+    }
+   </script>
+</html>
